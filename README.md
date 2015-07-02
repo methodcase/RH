@@ -1,6 +1,13 @@
 #RH
 ### Really simple Http library
 
+      _____  _    _ 
+     |  __ \| |  | |
+     | |__) | |__| |
+     |  _  /|  __  |
+     | | \ \| |  | |
+     |_|  \_\_|  |_|
+
 ####Author
 
      Gerard Banasig
