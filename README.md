@@ -8,10 +8,6 @@
      | | \ \| |  | |
      |_|  \_\_|  |_|
 
-####Author
-
-     Gerard Banasig
-
 ####Install
 
    Download the RH.js file, then add in script src, then we are good to go
@@ -44,3 +40,7 @@
 			</script>
 		</body>
 	 </html>
+
+####Author
+
+     Gerard Banasig
