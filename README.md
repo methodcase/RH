@@ -19,7 +19,7 @@
     	console.log(res)
      })
 
-####Example Code
+####Complete Example Code
 
      <!doctype html>
 	 <html>
