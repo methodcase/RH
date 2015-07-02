@@ -1,6 +1,5 @@
 #RH
 ### Really simple Http library
-
       _____  _    _ 
      |  __ \| |  | |
      | |__) | |__| |
