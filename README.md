@@ -1,17 +1,17 @@
 #RH
 ### Really simple Http library
 
-Author
+####Author
 
-    Gerard Banasig
+     Gerard Banasig
 
-Install
+####Install
 
-    Download the RH.js file, then add in script src, then we are good to go
-    <script>RH.js</script>
+     Download the RH.js file, then add in script src, then we are good to go
+     <script>RH.js</script>
 
-Usage
+####Usage
 
-    RH.get("https://restcountries.eu/rest/v1/name/philippines", function(res){
+     RH.get("https://restcountries.eu/rest/v1/name/philippines", function(res){
     	console.log(res)
-    })
+     })
