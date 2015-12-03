@@ -9,7 +9,7 @@
 
 ####Install
 
-   Download the [RH.js](https://raw.githubusercontent.com/daixtr/RH/master/RH.js "RH.js") file, then add in script src, then we are good to go
+   Download the [RH.js](https://raw.githubusercontent.com/methodcase/RH/master/RH.js "RH.js") file, then add in script src, then we are good to go
 
      <script type="text/javascript" src="RH.js"></script>
 
@@ -48,4 +48,4 @@
 
 ####Author
 
-     daixtr
+     Gerard Banasig
