@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>RH</title>
+    <script type="text/javascript" src="RH.js"></script>
+</head>
+<body>
+    <h1>RH Demo</h1>
+    <hr>
+    <span><label id="desc"></label><ul id="rhcontent"></ul></span>
+
+    <script type="text/javascript">
+        function updatecontent() {
+            function doit() {
+                document.getElementById("desc").innerHTML = "<b>Reddit Top News as of " + new Date().toUTCString() + ":</b>";
+                RH.get("http://api.reddit.com/hot",
+                    function(res){
+                        var result = "";
+                        res.forEach(function (e) {
+                            result = result + "<li>" + e + "</li>";
+                        });
+                        document.getElementById("rhcontent").innerHTML = result;
+                    }
+                )
+            }
+            doit();
+            return doit;
+        }
+
+        setInterval(updatecontent(),6000); // update content every minute
+    </script>
+</body>
+</html>
