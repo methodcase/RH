@@ -9,7 +9,7 @@
 
 ####Install
 
-   Download the [RH.js](https://raw.githubusercontent.com/methodcase/RH/master/RH.js "RH.js") file, then add in script src, then we are good to go
+   Download the [RH.js](https://raw.githubusercontent.com/daixtr/RH/master/RH.js "RH.js") file, then add in script src, then we are good to go
 
      <script type="text/javascript" src="RH.js"></script>
 
@@ -33,13 +33,19 @@
 			<script type="text/javascript">
 				RH.get("http://api.reddit.com/hot",
 					function(res){
-						document.write(res)
+                        var result = "<ul>";
+                        res.forEach(function (e) {
+                            result = result + "<li>" + e + "</li>";
+                        });
+                        result = result + "</ul>";
+                        document.getElementById("rhcontent").innerHTML = result;
 					}
 				)
 			</script>
+            <span id="rhcontent"></span>
 		</body>
 	 </html>
 
 ####Author
 
-     Gerard Banasig
+     daixtr
