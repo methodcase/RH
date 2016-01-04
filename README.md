@@ -21,6 +21,8 @@
     	console.log(res)
      })
 
+   If you have python, you can 'python -m SimpleHTTPServer' to sever the example index.html. 
+
 ####Complete Example Code
 
      <!doctype html>
@@ -33,10 +35,15 @@
 			<script type="text/javascript">
 				RH.get("http://api.reddit.com/hot",
 					function(res){
-						document.write(res)
+                        var result = "";
+                        res.forEach(function (e) {
+                            result = result + "<li>" + e + "</li>";
+                        });
+                        document.getElementById("rhcontent").innerHTML = result;
 					}
 				)
 			</script>
+            <span><ul id="rhcontent"></ul></span>
 		</body>
 	 </html>
 
